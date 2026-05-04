@@ -1,0 +1,13 @@
+{
+  "name": "password",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @password/web dev",
+    "build": "pnpm --filter @password/web build",
+    "preview": "pnpm --filter @password/web preview",
+    "typecheck": "pnpm --filter @password/web exec tsc -b"
+  }
+}
