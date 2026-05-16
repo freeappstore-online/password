@@ -2,10 +2,21 @@
   "name": "freepasswordapp",
   "private": true,
   "packageManager": "pnpm@10.30.3",
-  "engines": { "node": ">=22" },
-  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "scripts": {
     "dev": "pnpm --filter @freepasswordapp/web dev",
-    "build": "pnpm --filter @freepasswordapp/web build"
+    "build": "pnpm --filter @freepasswordapp/web build",
+    "test": "pnpm --filter @password/web exec tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/password.git"
   }
 }
