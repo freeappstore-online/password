@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "pnpm --filter @freepasswordapp/web dev",
     "build": "pnpm --filter @freepasswordapp/web build",
-    "test": "pnpm --filter @password/web exec tsc -b"
+    "typecheck": "pnpm --filter @freepasswordapp/web exec tsc -b",
+    "test": "pnpm --filter @freepasswordapp/web exec tsc -b"
   },
   "repository": {
     "type": "git",

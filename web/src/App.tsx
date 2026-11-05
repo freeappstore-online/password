@@ -139,7 +139,7 @@ export function App() {
           }}
         >
           {password || (
-            <span style={{ color: "var(--color-muted)", fontFamily: "var(--font-body)" }}>
+            <span style={{ color: "var(--color-muted)", fontFamily: "Manrope, system-ui, sans-serif" }}>
               No character types selected
             </span>
           )}
@@ -193,7 +193,7 @@ export function App() {
               background: "var(--color-accent)",
               border: "none",
               cursor: "pointer",
-              fontFamily: "var(--font-body)",
+              fontFamily: "Manrope, system-ui, sans-serif",
             }}
           >
             Generate
@@ -210,7 +210,7 @@ export function App() {
               background: "var(--color-panel)",
               border: `1px solid ${copied ? "#22c55e" : "var(--color-line)"}`,
               cursor: "pointer",
-              fontFamily: "var(--font-body)",
+              fontFamily: "Manrope, system-ui, sans-serif",
               transition: "color 0.2s, border-color 0.2s",
             }}
           >
@@ -276,9 +276,7 @@ export function App() {
                   borderRadius: "var(--radius-btn)",
                   fontWeight: 700,
                   fontSize: "0.85rem",
-                  fontFamily: t.label === "ABC" || t.label === "abc"
-                    ? "var(--font-body)"
-                    : "'Courier New', Courier, monospace",
+                  fontFamily: /^abc$/i.test(t.label) ? "Manrope, system-ui, sans-serif" : "'Courier New', Courier, monospace",
                   color: t.checked ? "#fff" : "var(--color-muted)",
                   background: t.checked ? "var(--color-accent)" : "var(--color-panel)",
                   border: `1px solid ${t.checked ? "var(--color-accent)" : "var(--color-line)"}`,
@@ -306,7 +304,7 @@ export function App() {
                 fontWeight: 600,
                 color: "var(--color-muted)",
                 padding: 0,
-                fontFamily: "var(--font-body)",
+                fontFamily: "Manrope, system-ui, sans-serif",
               }}
             >
               History ({history.length}){" "}
@@ -363,7 +361,7 @@ export function App() {
                         color: "var(--color-accent)",
                         padding: "2px 6px",
                         borderRadius: 4,
-                        fontFamily: "var(--font-body)",
+                        fontFamily: "Manrope, system-ui, sans-serif",
                         flexShrink: 0,
                       }}
                     >
